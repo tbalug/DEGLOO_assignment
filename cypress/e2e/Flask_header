@@ -1,0 +1,22 @@
+context('Flask Dashboard page - header', () => {
+  beforeEach(() => {
+    cy.visit("https://flask.io")
+  })
+
+  it('Successfully loads', () => {
+   
+  })
+
+  it('Check for the header', () => {
+    cy.get('.home-header > .container')
+   })
+
+  it('Check for the logo', () => {
+   cy.get('.logo')
+  })
+
+  it ('Open log in page', () => {
+    cy.get('.btn-tertiary').click()
+})
+
+})
